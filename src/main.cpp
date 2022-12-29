@@ -37,13 +37,15 @@ const unsigned char TxtDemo[] = {
                                   EFFECT_HSV_CH "\x00\xff\xff\xff\xff\xff" "    HSV_CH 00-FF"
                                   EFFECT_HSV_CV "\x00\xff\xff\xff\xff\xff" "    HSV_CV 00-FF"
                                   EFFECT_HSV_AH "\x00\xff\xff\xff\xff\xff" "    HSV_AH 00-FF"
-*/
+
                                   EFFECT_HSV_AV "\x00\xff\xff\xFF\xff\xff" "     Cheers to the New Year!"
                                   EFFECT_DELAY_FRAMES "\x00\x40"
                                   "  "
                                   EFFECT_HSV "\x00\xff\xff" "W" EFFECT_HSV "\x18\xff\xff" "o" EFFECT_HSV "\x30\xff\xff" "o" EFFECT_HSV "\x48\xff\xff" "h" EFFECT_HSV "\x60\xff\xff" "o" EFFECT_HSV "\x78\xff\xff" "o "
                                   EFFECT_HSV "\x90\xff\xff" "2" EFFECT_HSV "\xA8\xff\xff" "0" EFFECT_HSV "\xC0\xff\xff" "2" EFFECT_HSV "\xD8\xff\xff" "2"  EFFECT_HSV "\xFF\xff\xff" "!"
                                   EFFECT_DELAY_FRAMES "\x00\x80"
+*/
+                                  EFFECT_HSV_AV "\x00\xff\xff\xFF\xff\xff" "     Merry Christmas and a Happy New Year!"
                                   };
 
 void setup()
@@ -67,5 +69,5 @@ void loop()
     ScrollingMsg.SetText((unsigned char *)TxtDemo, sizeof(TxtDemo) - 1);
   else
     FastLED.show();
-  delay(50);
+  delay(50);         // Controls speed of scrolling
 }
